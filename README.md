@@ -1,7 +1,7 @@
 # LLM
 This contains several projects about LLM topics, including Summarization and Text generation, and so on. 
 # Note
-There are some notes from Coursera down below. Hope it would be helpful for you.  
+There are some notes from Coursera and DeepLearning.AI down below. Hope it would be helpful for you.  
 ## Different models
 ### Autoencoding models
 Known as encoder-only LLM.  
@@ -40,3 +40,7 @@ BART
 We can use Distributed Data Parallel to improve the model's efficiency since sometimes the model is too big for a single GPU, dividing LLM into several GPUs and eventually Synchronizing gradients to update the model.  
 ### Fully Sharded Data Parallel (FSDP)
 Reducing memory by distributing the model parameters, gradients and optimizer states across GPUs instead of replicating them.  
+## Pre-training for domain adaptation
+Different domains have their own special term. Using Pre-training for specific domain adaptation can be efficient and convenient.  
+### BloombergGPT
+BloombergGPT is a financial model, it is a good case of pre-training a model for increased domain-specificity.  
