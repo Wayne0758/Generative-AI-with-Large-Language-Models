@@ -1,0 +1,38 @@
+# install pytorch and datasets
+!pip install --upgrade pip
+!pip install torch
+!pip install torchdata --quiet
+
+!pip install transformers
+!pip install datasets --quiet
+# import models and datas
+import torch
+import torchdata
+from datasets import load_dataset
+from transformers import AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer
+from transformers import GenerationConfig
+# import datasets
+huggingface_dataset_name = 'knkarthick/dialogsum'
+
+dataset = load_dataset(huggingface_dataset_name)
+# show some examples
+example_indices = [1, 2]
+
+dash_line = '-'.join('' for x in range(100))
+
+for i, index in enumerate(example_indices):
+    print(dash_line)
+    print('Example ', i + 1)
+    print(dash_line)
+    print('INPUT DIALOGUE:')
+    print(dataset['test'][index]['dialogue'])
+    print(dash_line)
+    print('BASELINE HUMAN SUMMARY:')
+    print(dataset['test'][index]['summary'])
+    print(dash_line)
+    print()
+# load FLAN-T5 model
+model_name = 'google/flan-t5-base'
+
+model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
