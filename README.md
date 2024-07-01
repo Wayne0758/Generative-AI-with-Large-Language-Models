@@ -1,5 +1,6 @@
 # LLM
-This contains several projects about LLM topics, including Summarization and Text generation, and so on. 
+This contains several projects about LLM topics, including Summarization and Text generation, and so on.  
+I made some changes to adapt to PC users since the original version is for AWS users.
 # Note
 There are some notes from Coursera and DeepLearning.AI down below. Hope it would be helpful for you.  
 ## Different models
