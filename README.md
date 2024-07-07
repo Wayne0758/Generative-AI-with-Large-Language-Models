@@ -1,6 +1,9 @@
 # LLM
 This contains several projects from Generative-AI-with-Large-Language-Models in Coursera, including Summarization and Text generation, and so on.  
-I made some changes to adapt to PC users since the original version is for AWS users.
+I made some changes to adapt to PC users since the original version is for AWS users.  
+  
+If you have any questions, feel free to contact me.  
+
 # Note
 There are some notes from Coursera and DeepLearning.AI down below. Hope it would be helpful for you.  
 
