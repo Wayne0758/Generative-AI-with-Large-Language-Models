@@ -182,8 +182,11 @@ Make the Instruct LLM and the Human-aligned LLM generate the output.
 Feed the reward model with their outputs.  
 Compare their score to evaluate whether the human-aligned LLM is better than the Instruct LLM.  
 
+### Retrieval-augmented generation (RAG)
+RAG is used for improving the model's accuracy and fact-checking by accessing the external resource.  
 
-
+### chain-of-thought
+By giving step-by-step procedures, LLMs can produce more accurate output.
 
 
 
